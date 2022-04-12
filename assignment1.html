@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>assignment</title>
+  </head>
+  <body>
+    <h1>ASSIGNMENT FORM 1</h1>
+    <form id="form">
+      <label>EMAIL :</label
+      ><input type="email" placeholder="abc@xyz.com" id="useremail" required />
+      <br />
+      <br />
+      <label>PASSWORD :</label
+      ><input
+        type="password"
+        minlength="6"
+        id="userpassword"
+        placeholder="Abc123"
+        required
+      />
+      <br />
+      <br />
+      <label>SEX :</label>
+      <select id="gender" required>
+        <option value="">--sex--</option>
+        <option value="male">male</option>
+        <option value="female">female</option>
+        <option value="other">other</option>
+      </select>
+      <br />
+      <br />
+      <label>ROLE :</label>
+      <input type="radio" id="admin" required />
+      <label for="Admin">Admin</label>
+      <input type="radio" id="user" required />
+      <label for="User">User</label>
+      <br />
+      <br />
+      <label>PERMISSIONS :</label>
+      <label><input type="checkbox" id="p1" />Perm1</label>
+      <label><input type="checkbox" id="p2" />Perm2</label>
+      <label><input type="checkbox" id="p3" />Perm3</label>admad
+      <label><input type="checkbox" id="p4" />Perm4</label>
+      <br />
+      <br />
+      <div style="text-align: center">
+        <!-- <a onclick="submitform()" type="Submit">Submit</a> -->
+        <button id="submitit" type="button" onclick="submitform()">
+          Submit
+        </button>
+      </div>
+    </form>
+
+    <div id="confirmation" style="display: none">
+      <div>
+        Email:
+        <span id="email"></span>
+        <br /><br />
+        Password:
+        <span id="password"></span>
+        <br /><br />
+        Sex:
+        <span id="sex1"></span>
+        <br /><br />
+        Role:
+        <span id="role"></span><br /><br />
+        Permissions:
+        <label><input type="checkbox" id="perm1" />Perm1</label>
+        <label><input type="checkbox" id="perm2" />Perm2</label>
+        <label><input type="checkbox" id="perm3" />Perm3</label>
+        <label><input type="checkbox" id="perm4" />Perm4</label>
+        <br />
+        <br />
+      </div>
+      <div style="text-align: center">
+        <button type="submit">Confirm</button>
+      </div>
+    </div>
+
+    <!-- <div id="confirm" style="display: none;">
+        <input id="email">
+        <input id="email">
+        <br>
+        <br>
+        <input id="password">
+        <br>
+        <br>
+        <input id="sex">
+        <br>
+        <br>
+        <input id="role">
+        <br>
+        <br>
+        
+        <label><input type="checkbox" id="perm1">Perm1</label>
+        <label><input type="checkbox" id="perm2">Perm2</label>
+        <label><input type="checkbox" id="perm3">Perm3</label>
+        <label><input type="checkbox" id="perm4">Perm4</label>
+        <br>
+        <br>
+        <div style= "text-align: center">
+            <input type="Submit" value="Confirm">
+        </div>
+    </div> -->
+    <script>
+      function submitform() {
+        const email = document.getElementById("useremail").value;
+        const password = document.getElementById("userpassword").value;
+
+        const sexvalue = document.getElementById("gender");
+        const sex = sexvalue.options[sexvalue.selectedIndex].value;
+
+        // document.getElementById('email').value = document.getElementById('useremail').value;
+        // document.getElementById('password').value = document.getElementById('userpassword').value;
+        // document.getElementById('sex').value = document.getElementById('gender').value;
+
+        document.getElementById("role").innerHTML = document.getElementById(
+          "admin"
+        ).checked
+          ? "admin"
+          : "user";
+
+        document.getElementById("perm1").checked =
+          document.getElementById("p1").checked;
+        document.getElementById("perm2").checked =
+          document.getElementById("p2").checked;
+        document.getElementById("perm3").checked =
+          document.getElementById("p3").checked;
+        document.getElementById("perm4").checked =
+          document.getElementById("p4").checked;
+
+        document.getElementById("form").style.display = "none";
+        document.getElementById("confirmation").style.display = "block";
+        document.getElementById("email").innerHTML = email;
+        document.getElementById("password").innerHTML = password;
+        document.getElementById("sex1").innerHTML = sex;
+        // localStorage.setItem("email", email);
+        // window.open("/confirm.html", "_self");
+      }
+    </script>
+  </body>
+</html>
