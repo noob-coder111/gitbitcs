@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
-<body>
+  <body>
+    <h1>Bitcs project</h1>
 
-<h1>Bitcs project</h1>
-<p>First line. More lines to be added.</p>
-
-</body>
+    <div id="firstContainer" class="container">
+      <input id="num1" />+<input id="num2" />
+      <button id="click">Click</button>
+      <p>First line. More lines to be added.</p>
+      Sum:
+      <span id="sumval"></span>
+    </div>
+  </body>
+  <script>
+    const arr = [
+      { firstname: "David", last: "Miller" },
+      { firstname: "mikasa", last: "ackerman" },
+      { firstname: "shawn", last: "mendes" },
+    ];
+    arr.map(mapit=>{console.log([mapit.firstname, mapit.last].join("-"));});
+  
+  </script>
 </html>

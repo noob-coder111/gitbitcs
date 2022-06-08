@@ -1,0 +1,144 @@
+
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  
+}
+.header p{
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1em;
+}
+
+.header h1{
+  text-transform: uppercase;
+  letter-spacing: 35px;
+  font-size: 9vw;
+  margin: 0;
+}
+
+@media (max-width:500px) {
+  .header h1{
+      text-transform: uppercase;
+      letter-spacing: 15px;
+      font-size: 9vw;
+  }
+  
+}
+
+/* Header.js Styling */
+
+
+/* Navbar.js Styling */
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 40px 20px 40px 20px;
+  padding: 2px 5px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+nav a:hover {
+  background-color: black;
+  color: white;
+}
+
+nav a.active {
+  background-color: black;
+  color: white;
+}
+
+/* Navbar.js Styling */
+
+
+/* BlogPost.js Styling */
+
+.box {
+  padding: 20px;
+  margin-bottom: 40px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box:hover {
+  background-color: black;
+  color: white;
+}
+.box .blog-content .des{
+  overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 5; /* number of lines to show */
+   -webkit-box-orient: vertical;
+}
+
+.box .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box .buttons button {
+  width: 200px;
+  background-color: black;
+  color: white;
+  margin: 10px;
+  border: 1px solid white;
+}
+
+.box .buttons button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* BlogPost.js Styling */
+
+
+/* EditBlog.js Styling */
+
+.single-blog-post {
+  display: flex;
+  flex-direction: column;
+}
+.single-blog-post .row .col-12{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.single-blog-post h4{
+  margin-right: 30px;
+}
+.single-blog-post input{
+  width: 1000px;
+}
+.single-blog-post textarea{
+  width: 1000px;
+  height: 200px;
+}
+
+.single-blog-post button {
+  width: 200px;
+  color: black;
+  background-color: white;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.single-blog-post button:hover{
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,181 @@
+// console.log("Clicked");
+// var obj={
+//     obj1:"string 1",
+//     obj2:2
+// }
+// console.log(obj.obj2)
+
+// var a=["app","class","bar","babe","app"]
+// var b=[1 , 233,2331,4]
+// b.sort()
+// b.unshift()
+// var s="Im Deepak"
+// console.log(s.slice())
+
+// document.getElementById("Click").style.border='2px solid green'
+// document.getElementById("Click").style.background='blue'
+// d=document.getElementsByTagName('div')
+// c1=document.createElement("abc")
+// c1.innerText="I'm appending. "
+// d[0].appendChild(c1)
+// c2=document.createElement("bc")
+// c2.innerText="It's final append. "
+// d[0].replaceChild(c2,c1)
+// console.log(d)
+
+// window.onload=function(){
+//     console.log("Loaded successfully")
+// }
+
+// firstContainer.addEventListener('click', function(){
+//     document.querySelectorAll('.container')[0].innerHTML="<b>clicked</b>"
+//     console.log("Clicked on the Container")
+// })
+// // firstContainer.addEventListener('mouseout', function(){
+// //     console.log("hovered on Container")
+// // })
+
+const person = {
+  name: "mosh",
+  walk() {
+    console.log(person);
+  },
+};
+
+// person.name=''
+// // const target='name'
+// // person[target.value]="harry"
+// console.log(person)
+
+//const way1=person.walk()
+// const way=person.walk.bind(person)
+// way()
+//console.log(walk)
+
+// const jobs=[
+//     {id: 1, isActive: true},
+//     {id:2, isActive:true},
+//     {id:2, isActive:false}
+// ]
+
+// const activeJobs=jobs.filter(function(job){return job.isActive;})
+// const activeJobs2=jobs.filter(job=>job.isActive)
+
+// console.log(activeJobs)
+// console.log(activeJobs2)
+
+// const talking={
+//     talk(){
+//            // var this="this"
+//             setTimeout(() =>{
+//                 console.log(this);
+//             },1000)
+//     }
+// }
+// talking.talk()
+// const marks = {
+//   m1: 10,
+//   m2: 20,
+//   m3: 12,
+// };
+
+// const marks2 = {
+//   m3: 40,
+//   m4: 50,
+// };
+
+// const c = (total = {
+//   ...marks,
+//   ...marks2,
+//   m6: 60,
+// });
+
+// console.log(c);
+// const { m1: a, m2: b, m3: c } = marks;
+// console.log(a, b, c);
+
+// class Employee {
+//   constructor(name, id, rank) {
+//     this.n = name;
+//     this.i = id;
+//     this.r = rank;
+//   }
+//   slogan() {
+//     return "Here's to love heres to hononour";
+//   }
+//   static goal() {
+//     return "test if it prints";
+//   }
+// }
+// class Programmer extends Employee {
+//   constructor(name, id, rank, status1) {
+//     super(name, id, rank);
+//     this.s1 = status1;
+//   }
+// }
+
+// const Deepak = new Employee("Deepak", "001", "76");
+// const Atul = new Programmer("Atul", "045", "10", "in");
+
+// console.log(Deepak);
+// console.log(Deepak.slogan());
+// console.log(Employee.goal());
+// console.log(Atul);
+
+// const button = document.getElementById("click");
+// const ip1 = document.getElementById("num1");
+// const ip2 = document.getElementById("num2");
+
+// function add(num1, num2) {
+//   return +num1 + +num2;
+// }
+
+// button.addEventListener("click", function () {
+//   console.log(add(ip1.value, ip2.value));
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////assignment 2
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Person {
+        constructor(name, age, salary, sex) {
+          this.n = name;
+          this.a = age;
+          this.s = salary;
+          this.sx = sex;
+        }
+        static sort(arr) {}
+      }
+
+      const Deepak = new Person("Deepak", "21", "10000", "male");
+      const Atul = new Person("Atul", "", "22", "15000", "male");
+      const Abhishek = new Person("Abhishek", "20", "11000", "male");
+      const Mayank = new Person("Mayank", "23", "12000", "male");
+      const arr = [Deepak, Atul, Abhishek, Mayank];
+      arr.sort();
+      console.log(arr);
+    </script>
+  </body>
+</html> -->

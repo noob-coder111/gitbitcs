@@ -1,0 +1,11 @@
+INSERT INTO cats (id, catname, age, breed)
+VALUES (1,'piko',4,'persian');
+
+INSERT INTO cats (id, catname, age, breed)
+VALUES (2,'luna',3,'british');
+
+INSERT INTO cats (id, catname, age, breed)
+VALUES (3,'olivia',4,'maine');
+
+INSERT INTO cats (id, catname, age, breed)
+VALUES (4,'oggy',5,'bengali');
